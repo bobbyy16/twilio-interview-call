@@ -34,8 +34,8 @@ This project is a Node.js-based IVR (Interactive Voice Response) system built us
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/twilio-ivr-system.git
-cd twilio-ivr-system
+git clone https://github.com/bobbyy16/twilio-interview-call.git
+cd twilio-interview-call
 ```
 
 ### 2. Install Dependencies
