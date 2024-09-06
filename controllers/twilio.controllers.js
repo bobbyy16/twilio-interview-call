@@ -1,10 +1,9 @@
-// controllers/ivrController.js
 const twilio = require("twilio");
 require("dotenv").config;
 
-// Twilio credentials (replace with your own)
-const accountSid = process.env.SID; // Your Account SID from www.twilio.com/console
-const authToken = process.env.AUTH; // Your Auth Token from www.twilio.com/console
+// Twilio credentials
+const accountSid = process.env.SID; // SID
+const authToken = process.env.AUTH; // Auth Token
 const client = new twilio(accountSid, authToken);
 
 const myPhoneNumber = process.env.Twilio_NUMBER; // Twilio number
