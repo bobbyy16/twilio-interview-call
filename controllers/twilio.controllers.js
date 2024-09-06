@@ -12,7 +12,7 @@ const recipientNumber = process.env.RECIPENT_NUMBER; // Your number
 console.log(myPhoneNumber, recipientNumber);
 
 // Audio and Interview Link
-const audioUrl = "https://screenapp.io/app/#/shared/wkaGswaFVf"; // Put the direct link to your audio file here.
+const audioUrl = "https://voca.ro/19OL1pwaFlPv"; // Put the direct link to your audio file here.
 const interviewLink =
   "https://v.personaliz.ai/?id=9b697c1a&uid=fe141702f66c760d85ab&mode=test";
 
@@ -20,7 +20,7 @@ const interviewLink =
 exports.makeCall = (req, res) => {
   client.calls
     .create({
-      url: "https://05e6-152-58-242-135.ngrok-free.app/ivr",
+      url: "https://twilio-interview-call.onrender.com/ivr",
       to: recipientNumber,
       from: myPhoneNumber,
     })
