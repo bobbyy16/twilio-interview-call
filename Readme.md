@@ -86,15 +86,21 @@ POST /gather
 
 - Handles the user's input (e.g., pressing 1 to send the interview link via SMS).
 
-## 📂 Project Structure
+## 📂 Folder Overview
 
-├── controllers
-│ └── ivrController.js # Logic for handling Twilio API interactions
-├── routes
-│ └── ivrRoutes.js # Defines the routes for initiating calls and IVR responses
-├── .env # Environment variables (not included in version control)
-├── server.js # Main server file to run the Express app
-└── README.md # This file!
+- `controllers/`
+
+  - `twilio.controllers.js`: Logic for handling Twilio API interactions.
+
+- `routes/`
+
+  - `twilio.routes.js`: Defines the routes for initiating calls and IVR responses.
+
+- `.env`: Environment variables (not included in version control).
+
+- `server.js`: Main server file to run the Express app.
+
+- `README.md`: This file!
 
 ## 🔄 How It Works
 
@@ -108,7 +114,7 @@ POST /gather
 
 ## ⚠️ Limitations
 
-- **Trial Account Restrictions**: If you are using a Twilio trial account, you can only make calls and send SMS to phone numbers that you've verified with Twilio.
+- **Trial Account Restrictions**: If you are using a Twilio trial account, you can only make calls and send SMS to phone numbers that you've verified with Twilio and also you will have only the deafult audio.
 - **Audio File**: Currently, the system speaks the message using Twilio's `say()` feature. To play an audio file, you need a direct link to the file hosted on a service that supports public access.
 
 ## 🤝 Contributing
@@ -119,6 +125,6 @@ To contribute:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature-name`).
 5. Open a pull request.
